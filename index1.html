@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index1.css">
+    <title>Countdown Timer</title>
+</head>
+<body>
+    <div class="main">
+            <h2>Please Enter the End Date</h2>
+            <input type="datetime" name="input" id="enddate" required>
+            <input type="submit" value="GO" onclick="passingvalue()"/>
+    </div>
+    <script type="text/javascript">
+        function passingvalue(){
+            let date  = document.getElementById("enddate").value;
+            console.log(date);
+            localStorage.setItem("textvalue", date);
+            window.location.href= "index.html"
+        }
+    </script>
+</body>
+</html>
+
